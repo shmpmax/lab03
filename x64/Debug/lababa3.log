@@ -1,9 +1,9 @@
-﻿  hist.cpp
-  lababa3.cpp
+﻿  lababa3.cpp
 C:\Users\maxim\Desktop\lababa3\lababa3.cpp(72,35): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
   svg.cpp
-C:\Users\maxim\Desktop\lababa3\svg.cpp(61,49): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
-C:\Users\maxim\Desktop\lababa3\svg.cpp(63,34): warning C4244: инициализация: преобразование "size_t" в "double", возможна потеря данных
-C:\Users\maxim\Desktop\lababa3\svg.cpp(63,32): warning C4244: инициализация: преобразование "size_t" в "const double", возможна потеря данных
+C:\Users\maxim\Desktop\lababa3\svg.cpp(81,23): warning C4244: инициализация: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\maxim\Desktop\lababa3\svg.cpp(84,49): warning C4244: =: преобразование "double" в "size_t", возможна потеря данных
+C:\Users\maxim\Desktop\lababa3\svg.cpp(86,34): warning C4244: инициализация: преобразование "size_t" в "double", возможна потеря данных
+C:\Users\maxim\Desktop\lababa3\svg.cpp(86,32): warning C4244: инициализация: преобразование "size_t" в "const double", возможна потеря данных
   Создание кода...
   lababa3.vcxproj -> C:\Users\maxim\Desktop\lababa3\x64\Debug\lababa3.exe

@@ -31,6 +31,17 @@ void svg_rect(double x, double y, double width, double height) {
     cout << "<rect x='" << x << "' y='" << y << "' width='" << width << "' height='" << height << "' />\n";
 }
 
+void svg_blockwidth(double& BLOCK_WIDTH, bool& block)
+{
+    if (BLOCK_WIDTH < 3 || BLOCK_WIDTH > 30)
+    {
+        block = true;
+    }
+    else
+    {
+        block = false;
+    }
+}
 
 void show_histogram_svg(const vector<size_t>& bins)
 {
@@ -40,14 +51,26 @@ void show_histogram_svg(const vector<size_t>& bins)
     const auto TEXT_BASELINE = 20;
     const auto TEXT_WIDTH = 50;
     const auto BIN_HEIGHT = 30;
-    const auto BLOCK_WIDTH = 10;
-
+    double BLOCK_WIDTH;
     size_t max_count = bins[0];
     for (size_t bin : bins)
     {
         if (max_count < bin)
         {
             max_count = bin;
+        }
+    }
+
+    cerr << "Enter BLOCK_WIDTH : ";
+    cin >> BLOCK_WIDTH;
+    bool block = true;
+    while (block == true)
+    {
+        svg_blockwidth(BLOCK_WIDTH, block);
+        if (block == true)
+        {
+            cerr << "Limit! Re enter BLOCK_WIDTH : ";
+            cin >> BLOCK_WIDTH;
         }
     }
 

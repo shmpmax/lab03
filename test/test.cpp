@@ -1,5 +1,5 @@
 #include "hist.h"
-
+#include "svg.h"
 #include <cassert>
 
 
@@ -44,6 +44,21 @@ void test_zero() {
     assert(max == -1000);
 }
 
+void test_low()
+{
+    double bw = 31;
+    bool pv = true;
+    svg_blockwidth(bw, pv);
+    assert(pv == true);
+}
+
+void test_correct()
+{
+    double bw = 15;
+    bool pv = true;
+    svg_blockwidth(bw, pv);
+    assert(pv == false)
+}
 
 int main()
 {

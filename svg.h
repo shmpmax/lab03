@@ -19,5 +19,7 @@ void svg_rect(double x, double y, double width, double height);
 
 void show_histogram_svg(const vector<size_t>& bins);
 
+void svg_blockwidth(double& BLOCK_WIDTH, bool& block);
+
 
 #endif // SVG_H_INCLUDED
